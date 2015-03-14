@@ -23,9 +23,9 @@ public class MainActivity extends ActionBarActivity {
 
     // User config
     // TODO move to config file?
-    private static String MOJIO_APP_ID = "010f96d7-9009-4987-bfee-920e50e5aa24";
-    private static String USER_SECRET_KEY = "6223be9c-f500-4775-b27e-e6c109cd801d";
-    private static String REDIRECT_URL = "testsdk://";
+    private static String MOJIO_APP_ID = "<app ID>";
+    private static String USER_SECRET_KEY = "<secret key>";
+    private static String REDIRECT_URL = "<appname>://";
 
     // Request constants
     public static int ACCESS_TOKEN_REQUEST_CODE = 0;
