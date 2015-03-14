@@ -13,7 +13,7 @@ public class Vehicle {
     public String OwnerId;
     public String MojioId;
     @SerializedName("Name")
-    private String VehicleName;
+    public String VehicleName;
     public void setVehicleName(String name) { VehicleName = name; }
     public String VIN;
     public String LicensePlate;

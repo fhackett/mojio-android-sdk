@@ -23,8 +23,9 @@ public class MainActivity extends ActionBarActivity {
 
     // User config
     // TODO move to config file?
-    private static String USER_SECRET_KEY = "3d431a5d-472f-4a10-b0dd-29d9f7f7c6dc";
-    private static String REDIRECT_URL = "mojioios://";
+    private static String MOJIO_APP_ID = "010f96d7-9009-4987-bfee-920e50e5aa24";
+    private static String USER_SECRET_KEY = "6223be9c-f500-4775-b27e-e6c109cd801d";
+    private static String REDIRECT_URL = "testsdk://";
 
     // Request constants
     public static int ACCESS_TOKEN_REQUEST_CODE = 0;
@@ -39,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         _loginButton = (Button)findViewById(R.id.oauthButton);
         _listView = (ListView)findViewById(R.id.vehicleList);
-        _mojioClient = new MojioClient(getApplicationContext(), USER_SECRET_KEY, REDIRECT_URL);
+        _mojioClient = new MojioClient(getApplicationContext(), MOJIO_APP_ID, USER_SECRET_KEY, REDIRECT_URL);
 
         _loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
